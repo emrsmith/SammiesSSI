@@ -15,6 +15,46 @@
 
   <body>
     <a class="skip" href = "#main" > Skip to Main Content </a>
+    <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" > 
+        <div class = "nav">
+            <ul class = "nav_links">
+              <li> <a href="sammies.html"> HOME </a> </li> 
+              <li> <a href="menu.html"> MENU </a></li>
+              <li> <a class = "activePage" href="#skip"> HOURS </a> </li>
+              <li> <a href="about.html"> ABOUT</a> </li>
+            </ul> 
+          </div> 
+        <header>
+          <!-- Hamburger Nav Menu -->
+          <div class="topnav">
+            <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" >
+            <!-- <a href="sammies.html" class="active">HOME</a> -->
+             
+            <!-- Navigation links -->
+            <div id="myLinks">
+              <a href="sammies.html">HOME</a>
+              <a href="menu.html">MENU</a>
+              <a href="hours.html" class = "active">HOURS</a>
+              <a href="about.html">ABOUT</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+          </div>
+          <script>
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+          }
+          </script>
+        </header>
+    
+    <!--
+    
     <header>
       <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo"> 
         <nav>
@@ -25,7 +65,36 @@
               <li> <a href="about.html"> ABOUT</a> </li>
             </ul> 
         </nav>
-    </header>
+        
+    <header>
+       Hamburger Nav Menu 
+      <div class="topnav">
+        <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" >
+         <a href="hours.html" class="active">HOURS</a> -->
+
+        <!-- Navigation links  
+        <div id="myLinks">
+          <a href="sammies.html">HOME</a>
+          <a href="menu.html">MENU</a>
+          <a href="hours.html" class = "active">HOURS</a>
+          <a href="about.html">ABOUT</a>
+        </div>
+         "Hamburger menu" / "Bar icon" to toggle the navigation links 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+      </div>
+      <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+        } 
+      </script> 
+    </header> -->
+    
     <main id = "main">
       <h1> Hours </h1>  
       <p> Tues - Sat 10:30 - 2:30 <br> 

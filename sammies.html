@@ -10,16 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/ygi2mrm.css">
     <link rel="shortcut icon" type="image/jpg" href="images/SammiesLOGOFINAL.jpg"/>
+    <!--link for hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sammies</title>
   <style> 
   .parallax {
-    /* The image used */
     background-image: url("images/IMG_2504.JPG");
-  
-    /* Set a specific height */
     min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,21 +26,47 @@
 
   <body>
     <a class="skip" href = "#main" > Skip to Main Content </a>
-    <header>
+     
       <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" > 
-        <nav>
+        <div class = "nav">
             <ul class = "nav_links">
               <li> <a class = "activePage" href="#skip"> HOME </a> </li>
               <li> <a href="menu.html"> MENU </a> </li>
               <li> <a href="hours.html"> HOURS </a></li>
               <li> <a href="about.html"> ABOUT</a> </li>
             </ul> 
-        </nav>
-    </header>
+          </div> 
+        <header>
+          <!-- Hamburger Nav Menu -->
+          <div class="topnav">
+            <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" >
+            <!-- <a href="sammies.html" class="active">HOME</a> -->
+             
+            <!-- Navigation links -->
+            <div id="myLinks">
+              <a href="sammies.html" class = "active">HOME</a>
+              <a href="menu.html">MENU</a>
+              <a href="hours.html">HOURS</a>
+              <a href="about.html">ABOUT</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+          </div>
+          <script>
+            function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+          }
+          </script>
+        </header>
     <main id = "main"> 
       <h1> Welcome to Sammies&#33; </h1>
       <div class="parallax"></div>
-      <!-- <img src = "images/3sliceoutline.png" alt = "three slices logo" class = "non_gallery_image" > -->
       <h2> Our Philosophy </h2>
       <p> A Sammie is a simple sandwich, but not just any sandwich. We slice meats and cheeses every morning to assemble a fresh, portable, delicious handheld lunch. Our recipe is a time tested wonder of sandwich science. Soft fresh bread, creamy cheese, southern mayo, a touch of prepared mustard, a healthy pair of crunchy pickle slices, and a generous portion of thinly sliced meat combine to create something more than the sum of its parts. The finished product is wrapped in film to allow the magic chemistry to begin. We prepare the Sammies daily just before we open the doors, so that you can get in and out in mere seconds. Sammies are great on the beach, on fishing trips, on the golf course, or just about anywhere you get hungry.</p>
       <div class = "buttons">
