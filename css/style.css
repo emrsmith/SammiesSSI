@@ -16,6 +16,8 @@
     color: #9f1412;
   }
 
+
+
   .logo { 
     max-width: 20%; 
     position: relative; 
@@ -47,6 +49,8 @@
   a.activePage { 
       background-color: #9f1412; 
       color: white; 
+      text-decoration: underline; 
+      text-decoration-color: black; 
   }
 
   .outside_link { 
@@ -81,7 +85,7 @@
     position: absolute; 
     top: 50%;  
     left: 50%;
-    width: 90%; 
+    width: 40%; 
     transform: translate(-50%, -50%);
     background: #9f1412;
     background-size
