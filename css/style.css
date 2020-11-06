@@ -16,20 +16,34 @@
     color: #9f1412;
   }
 
-  div { 
-    display: block; 
-    padding-top: 10px; 
-  }
-
+  
 
 
   .logo { 
-    max-width: 20%; 
+    max-width: 35%; 
     position: relative; 
     text-align: center; 
   }
 
+  @keyframes logo_wiggle{
+    from { 
+      width: 25px;  
+    }
+    to { 
+      width: 420px; 
+    }
   
+  } 
+  
+  #grow{
+    position: relative; 
+    text-align: center;  
+    -webkit-animation-name: logo_wiggle; 
+    -webkit-animation-duration: 5s; 
+  
+   
+  }
+
 
   a { 
       text-decoration: none; 
@@ -61,9 +75,11 @@
   .outside_link { 
       color: blue; 
   }
+
+
   
   h1{
-    font-size: 5em;
+    font-size: 3em;
     text-align: center;
     padding: 10px; 
     font-family: "parkside";
@@ -71,46 +87,7 @@
     color: #9f1412;
     
   }
-/*
-   h1 {
-    overflow: hidden; 
-    border-right: .15em solid #9f1412; 
-    white-space: nowrap;  
-    margin: 0 auto; 
-    letter-spacing: .1em;  
-    animation: 
-      typing 3.5s steps(50, end),
-      blink-caret .8s step-end infinite;
 
-    border-right: none;
-  } */
-
-  .top_text { 
-    color: white; 
-    position: absolute; 
-    top: 50%;  
-    left: 50%;
-    width: 40%; 
-    transform: translate(-50%, -50%);
-    background: #9f1412;
-    background-size
-  }
-  
-/*
-   
-  @keyframes typing {
-    from { width: 0 }
-      to { width: 100% }
-}
-
-
-   
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #9f1412; }
-  } 
-  */
-  
   h2{
     font-size: 2em;
     text-align: center;
@@ -133,6 +110,88 @@
     font-weight: normal; 
     color: #9f1412;
 }
+/*
+   h1 {
+    overflow: hidden; 
+    border-right: .15em solid #9f1412; 
+    white-space: nowrap;  
+    margin: 0 auto; 
+    letter-spacing: .1em;  
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret .8s step-end infinite;
+
+    border-right: none;
+  } 
+
+  .top_text { 
+    color: white; 
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    width: 40%; 
+    transform: translate(-50%, -50%);
+    background: #9f1412;
+    background-size
+  }  
+  
+
+  .top_text { 
+    background-color: white; 
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    width: 40%; 
+    transform: translate(-50%, -50%);
+  }
+  
+/*
+   
+  @keyframes typing {
+    from { width: 0 }
+      to { width: 100% }
+}
+
+
+   
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #9f1412; }
+  } 
+  */
+
+  .menu-block { 
+    display: block; 
+    background-color:#9f1412;  
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+  }
+
+  .index-block { 
+    display: block;  
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+  }
+
+  .hours-block { 
+    display: block; 
+    background-color: #9f1412; 
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+  }
+
+  
+  
+  
   
   
 
@@ -151,16 +210,19 @@
     align-items: center; 
   }
 
+
+
   .button{ 
     border: 2px solid #9f1412;   
     border-radius: 2px; 
     display: inline-block; 
-    color: #9f1412;; 
+    color: #9f1412; 
     font-style: normal; 
     margin-top: 10px; 
     text-align: center; 
     padding: 0.5rem 1rem; 
     box-shadow: 6px 6px #9f1412; 
+    
   }
 
   .circle-icon { 
@@ -186,6 +248,7 @@
       background-color: #9f1412; 
       color: white; 
       text-decoration: none; 
+      border-color: white; 
   }
 
   
@@ -239,7 +302,7 @@
 
   .menu-description { 
     background-color: white; 
-    border: 1px solid  #9f1412; 
+    border: 2px solid  #9f1412; 
     border-radius: 2px; 
     box-shadow: 6px 6px  #9f1412; 
     padding: 5vh; 
@@ -249,6 +312,9 @@
     
      
   }
+
+  
+  
 
   .container-sm { 
     margin-left: auto; 
@@ -289,7 +355,7 @@
   }
 
   footer > .logo { 
-    max-width: 15%; 
+    max-width: 20%; 
   }
 
   header { 
@@ -328,11 +394,11 @@
 .topnav a.icon {
   background:white;
   display: block; 
-  position: absolute; 
-  top:0; 
-  right:0; 
+  position: absolute;   
+  top: 20px; 
+  right: 10px; 
+  box-shadow: 6px 6px #9f1412;
 }
-
 
 /* Add a background color on mouse-over */
 .topnav a:hover {
@@ -344,12 +410,15 @@
 .topnav a.icon:focus { 
   background-color: #9f1412; 
   color: white; 
+  
 }
 
 /* Active link style (or home/logo) */
 .active {
   background-color: #9f1412 !important;
   color: white !important; 
+  text-decoration: underline !important; 
+  text-decoration-color: white !important; 
    
 }
 
@@ -375,6 +444,36 @@
        
   }
 
+  .menu-block { 
+    display: block; 
+    background-color: #9f1412; 
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+  }
+
+  .index-block { 
+    display: block; 
+    background-color: #9f1412; 
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px;
+  }
+
+  .hours-block { 
+    display: block; 
+    background-color: #9f1412; 
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 520px;
+  }
+
   
   .container-sm { 
     margin-left: auto; 
@@ -395,7 +494,7 @@
       flex-wrap: wrap;  
       justify-content: space-around;
       border: 1px solid #9f1412; 
-      box-shadow: 6px 6px #9f1412; 
+      box-shadow: 6px 6px#9f1412; 
       border-radius: 2px; 
       padding: .2rem;  
       
@@ -479,7 +578,11 @@
     grid-row: 8 / span 2; 
   }
 
+  
+
 }
+
+
 
 
 
@@ -519,6 +622,12 @@
         text-align: center; 
       }
 
+      footer > .logo { 
+        max-width: 10%; 
+        position: relative; 
+        text-align: center;
+      }
+
       .nav_links { 
         display: flex; 
         flex-direction: row; 
@@ -540,6 +649,36 @@
         margin-right: auto; 
         padding: 15px;
       }
+
+      .menu-block { 
+        display: block; 
+        background-color: #9f1412; 
+        position: absolute; 
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 550px;
+      }
+
+      .index-block { 
+        display: block; 
+        background-color: #9f1412; 
+        position: absolute; 
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 570px;
+      }
+
+      .hours-block { 
+        display: block; 
+        background-color: #9f1412; 
+        position: absolute; 
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 570px;
+      }
       
 
       
@@ -558,10 +697,7 @@
 
       }
 
-      footer > .logo { 
-        max-width: 10%; 
-        
-      }
+      
 
 
       #image1 { 
@@ -636,5 +772,13 @@
         object-fit: cover; 
       }
   }
+
+
+  /* reduced motion */ 
+
+  @media (prefers-reduced-motion) { 
+    #grow { 
+      animation: none; 
+    }
 
   
