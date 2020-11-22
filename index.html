@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3RVV1F4GF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3RVV1F4GF');
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
@@ -12,15 +21,16 @@
     <link rel="shortcut icon" type="image/jpg" href="images/SammiesLOGOFINAL.jpg"/>
     <!--link for hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scroll-down.js"></script>
     <title>Sammies</title>
     <style> 
     .parallax {
       background-image: url("images/IMG_2504.JPG");
-      min-height: 700px; 
+      min-height: 740px; 
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover; 
     }
     </style>
   </head>
@@ -28,7 +38,7 @@
   <body>
     <a class="skip" href = "#main" > Skip to Main Content </a>
      <nav>
-      <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo"> 
+      <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" id = "grow"> 
         <div class = "nav">
             <ul class = "nav_links">
               <li> <a class = "activePage" href="#skip"> HOME </a> </li>
@@ -65,20 +75,45 @@
             }
           }
           </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                  event.preventDefault();
+                  // Store hash
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+          </script>
         </header>
     <main id = "main"> 
+        
       <div class="parallax">
-          <!-- <div class = "index-block">
-        <h1> Welcome to Sammies&#33; </h1>
-    </div> -->
-      </div>
+         <!--<div class = "index-block">
+        <h1 class = "welcome"> Welcome to Sammies&#33; </h1>
+    </div>  --> 
+</div>
+<a class="ct-btn-scroll ct-js-btn-scroll" href="#section03"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a> 
+
+<section id = "section03"> 
       <h1> Our Philosophy </h1>
       <p> A Sammie is a simple sandwich, but not just any sandwich. We slice meats and cheeses every morning to assemble a fresh, portable, delicious handheld lunch. Our recipe is a time tested wonder of sandwich science. Soft fresh bread, creamy cheese, southern mayo, a touch of prepared mustard, a healthy pair of crunchy pickle slices, and a generous portion of thinly sliced meat combine to create something more than the sum of its parts. The finished product is wrapped in film to allow the magic chemistry to begin. We prepare the Sammies daily just before we open the doors, so that you can get in and out in mere seconds. Sammies are great on the beach, on fishing trips, on the golf course, or just about anywhere you get hungry.</p>
       <div class = "buttons">
         <a href= 'menu.html' class = "button"> Our Menu </a>
         <a href= 'tel:9122694920' class = "button"> Call&#58; 912&#8212;268&#8212;4920 </a> 
       </div>
-      
+    </section>
       <div class = "gallery"> 
         <img src = "images/IMG_2507.JPG" alt = "sammies chips and drink" id = "image1"> 
         <img src = "images/IMG_2505.JPG" alt = "counter and wall of shop" id = "image2"> 
@@ -89,6 +124,10 @@
         <img src = "images/IMG_2526.JPG" alt = "Tori with Sammies hat" id = "image7">
         <img src = "images/IMG_6529.jpg" alt = "ham sammie and chips" id = "image8"> 
         <img src = "images/sammiesveggie.jpg" alt = "veggie sammie" id = "image9"> 
+      </div>
+      <div class = "reviews"> 
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-b424cd17-651c-4ebf-9e50-b670272f6b0d"></div>
       </div>
     </main>
     <footer>

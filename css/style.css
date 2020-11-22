@@ -4,7 +4,7 @@
     padding: 0;
     font-size: 16pt; 
     background-color: white; 
-
+    overflow: scroll;
   }
   
   p { 
@@ -14,6 +14,7 @@
     padding: 10px 15px 10px 15px; 
     text-align: center; 
     color: #9f1412;
+    line-height: 1.25;
   }
 
   
@@ -76,6 +77,29 @@
       color: blue; 
   }
 
+  
+  .ct-btn-scroll {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 500px;
+    z-index: 9;
+    border-radius: 50%;
+    -webkit-transition: scrolling 3s ease infinite;
+    transition: scrolling 3s ease infinite;
+  }
+
+
+
+
+
+
+
+  
 
   
   h1{
@@ -84,8 +108,17 @@
     padding: 10px; 
     font-family: "parkside";
     font-weight: normal; 
-    color: #9f1412;
+    color:  #9f1412;
     
+  }
+
+  h1.welcome { 
+    font-size: 3em;
+    text-align: center;
+    padding: 10px; 
+    font-family: "parkside";
+    font-weight: normal; 
+    background-color: #9f1412; 
   }
 
   h2{
@@ -110,55 +143,8 @@
     font-weight: normal; 
     color: #9f1412;
 }
-/*
-   h1 {
-    overflow: hidden; 
-    border-right: .15em solid #9f1412; 
-    white-space: nowrap;  
-    margin: 0 auto; 
-    letter-spacing: .1em;  
-    animation: 
-      typing 3.5s steps(50, end),
-      blink-caret .8s step-end infinite;
-
-    border-right: none;
-  } 
-
-  .top_text { 
-    color: white; 
-    position: absolute; 
-    top: 50%;  
-    left: 50%;
-    width: 40%; 
-    transform: translate(-50%, -50%);
-    background: #9f1412;
-    background-size
-  }  
-  
-
-  .top_text { 
-    background-color: white; 
-    position: absolute; 
-    top: 50%;  
-    left: 50%;
-    width: 40%; 
-    transform: translate(-50%, -50%);
-  }
-  
-/*
-   
-  @keyframes typing {
-    from { width: 0 }
-      to { width: 100% }
-}
 
 
-   
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #9f1412; }
-  } 
-  */
 
   .menu-block { 
     display: block; 
@@ -172,11 +158,13 @@
 
   .index-block { 
     display: block;  
+    background-color:#9f1412;
     position: absolute; 
     top: 50%;  
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 380px;
+    width: 360px;
+     
   }
 
   .hours-block { 
@@ -289,16 +277,7 @@
     padding-bottom: 20px; 
   }
 
-  /*
-  .menu_text { 
-    border: 2px solid #9f1412; 
-    max-width: 50%; 
-    margin-left: auto; 
-    margin-right: auto; 
-    
-  }
-
-  */
+ 
 
   .menu-description { 
     background-color: white; 
@@ -410,7 +389,7 @@
 .topnav a.icon:focus { 
   background-color: #9f1412; 
   color: white; 
-  
+  box-shadow: 6px 6px white; 
 }
 
 /* Active link style (or home/logo) */

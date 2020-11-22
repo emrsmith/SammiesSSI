@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3RVV1F4GF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3RVV1F4GF');
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
@@ -14,19 +23,20 @@
     <style> 
       .parallax {
         background-image: url("images/IMG_2667.JPG");
-        min-height: 700px; 
+        min-height: 740px; 
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; 
       }
       </style>
+
   </head>
 
   <body>
     <a class="skip" href = "#main" > Skip to Main Content </a>
     <nav>
-      <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" > 
+      <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" id ="grow"> 
         <div class = "nav">
             <ul class = "nav_links">
               <li> <a href="index.html"> HOME </a> </li>
@@ -39,7 +49,7 @@
         <header>
           <!-- Hamburger Nav Menu -->
           <div class="topnav">
-            <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" >
+            <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" id ="grow">
             
              
             <!-- Navigation links -->
@@ -63,6 +73,27 @@
             }
           }
           </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                  event.preventDefault();
+                  // Store hash
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+          </script>
         </header>
     
     <main id = "main"> 
@@ -71,7 +102,9 @@
         <h1>Our Menu  </h1>
        </div> -->
       </div>
-      
+     
+      <a class="ct-btn-scroll ct-js-btn-scroll" href="#section03"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a> 
+      <section id = "section03">
         <div class= "menu-description container-sm"> 
           
             
@@ -82,36 +115,21 @@
               Choose your bread&#58; Wheat,  Rye, or Kaiser Bun <br> 
               (Comes with cheese, mustard, mayo and pickle slices)
           </p>
-          <h2>In the Cooler:</h2> 
+          <h2>In the Cooler</h2> 
           <p> Veggie <br> 
             Pimento Cheese <br> 
             Chicken Salad <br> 
-            (on wheat) 
-              
-          </p>
-          
-            <!--
-            <p> <strong> All Sammies are $5 including tax, except Roast Beef ($6) </strong> </p>
-            <p> Choose your meet&#58; Turkey,  Roast Beef, or Ham <br> 
-                Choose your bread&#58; Wheat,  Rye, or Kaiser Bun <br> 
-                (Comes with cheese, mustard, mayo and pickle slices) 
-            </p>
-            <h4>In the Cooler:</h4> 
-            <p> Veggie <br> 
-              Pimento Cheese <br> 
-              Chicken Salad <br> 
-              (on wheat) 
-                
-            </p>
-            <p>
-            <strong> You can choose to have Pimento Cheese or Chicken Salad in a cup with crackers if you wish </strong>
-            </p>
-            <h4> Extras </h4>
-            <p> We also have chips, crackers, cookies, candy, and drinks</p> 
-            -->
+            (on wheat or in a cup with crackers) <br>
+            
+          </p> 
+
+          <h2>Snacks</h2>
+          <p>Chips <br> Crackers <br> Cookies <br> Candy <br> </p>
+          <h2>Drinks</h2>
           
               
         </div> 
+      </section>
     </main>
     <footer>
       <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo">

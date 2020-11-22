@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V3RVV1F4GF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V3RVV1F4GF');
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
@@ -14,7 +23,7 @@
     <style>
     .parallax {
       background-image: url("images/IMG_2672.JPG");
-      min-height: 700px;   
+      min-height: 740px;   
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -27,7 +36,7 @@
   <body>
     <a class="skip" href = "#main" > Skip to Main Content </a>
     <nav> 
-      <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" > 
+      <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" id ="grow" > 
         <div class = "nav">
             <ul class = "nav_links">
               <li> <a href="index.html"> HOME </a> </li>
@@ -40,7 +49,7 @@
         <header>
           <!-- Hamburger Nav Menu -->
           <div class="topnav">
-            <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" >
+            <img src = "images/SammiesLOGOFINALblank.png" alt = "logo" class = "logo" id ="grow">
             
              
             <!-- Navigation links -->
@@ -64,17 +73,41 @@
             }
           }
           </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                  event.preventDefault();
+                  // Store hash
+                  var hash = this.hash;
+                  $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                  }, 800, function(){
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                  });
+                } // End if
+              });
+            });
+          </script>
+
         </header>
       
       <main id = "main"> 
         <div class="parallax">
           <!-- <h1 class = "top_text"> About Us </h1> -->
         </div>
-      <div class= "About Us"> 
+        <a class="ct-btn-scroll ct-js-btn-scroll" href="#section03"><img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png"></a> 
+      <section id = "section03">
+        <div class= "About Us"> 
         <h1>About Us</h1>
         <p> Sammies was created in February 2020 by Wilmot Greene and Tori Greene. When not whipping up delicious sammies, they can be found on the beach, sailing, or discovering new tunes. Stop by Sammies and give them a visit- they look forward to meeting you&#33;</p>
       </div>
-       
+    </section>
       <h2> Find us In&#58; </h2>
       <p>
       <a class = "outside_link" href = "https://www.coastalillustrated.com/ci/cifeature/article_03e3b3b3-f998-5234-9508-9f53ab22dba4.html" target="_blank"> Coastal Illustrated </a> 
