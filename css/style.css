@@ -17,6 +17,14 @@
     line-height: 1.25;
   }
 
+ 
+  .center { 
+     
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%; 
+  }
   
 
 
@@ -36,7 +44,7 @@
   
   } 
   
-  #grow{
+  #grow  {
     position: relative; 
     text-align: center;  
     -webkit-animation-name: logo_wiggle; 
@@ -77,8 +85,8 @@
       color: blue; 
   }
 
-  
-  .ct-btn-scroll {
+
+  .button-scroll {
     width: 49px;
     height: 49px;
     position: absolute;
@@ -86,20 +94,9 @@
     left: 0;
     right: 0;
     margin: auto;
-    padding-top: 500px;
-    z-index: 9;
-    border-radius: 50%;
-    -webkit-transition: scrolling 3s ease infinite;
-    transition: scrolling 3s ease infinite;
   }
 
 
-
-
-
-
-
-  
 
   
   h1{
@@ -346,12 +343,12 @@
   }
 
   /* navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: transparent;
-  position: relative;
-  
-}
+  .topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    
+  }
 
 /* Hide the links inside the navigation menu  */
 .topnav #myLinks {
@@ -421,6 +418,10 @@
       width: 95%; 
       z-index: 500;
        
+  }
+
+  .logo { 
+    max-width: 25%; 
   }
 
   .menu-block { 
@@ -756,7 +757,7 @@
   /* reduced motion */ 
 
   @media (prefers-reduced-motion) { 
-    #grow { 
+    #grow  { 
       animation: none; 
     }
 
