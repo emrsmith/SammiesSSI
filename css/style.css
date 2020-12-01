@@ -317,6 +317,14 @@
 
   }
 
+  /* navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    
+  }
+
   
   footer{
     color: black;
@@ -342,13 +350,7 @@
     z-index: 500; 
   }
 
-  /* navigation menu */
-  .topnav {
-    overflow: hidden;
-    background-color: transparent;
-    position: relative;
-    
-  }
+  
 
 /* Hide the links inside the navigation menu  */
 .topnav #myLinks {
