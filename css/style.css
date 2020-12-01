@@ -76,9 +76,9 @@
 
   a.activePage { 
       background-color: #9f1412; 
-      color: white; 
       text-decoration: underline; 
       text-decoration-color: black; 
+      color: white; 
   }
 
   .outside_link { 
